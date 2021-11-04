@@ -254,8 +254,8 @@ var loadTasks = function () {
       listItemEl.append(tasksToDoEl);
     }
     else if (tasks[i].status === "in progress") {
-      listItem.querySelector("select[name='status-change']").selectedIndex = 1;
-      listItemEl.append(tasksInProgress);
+      listItemEl.querySelector("select[name='status-change']").selectedIndex = 1;
+      listItemEl.append(tasksInProgressEl);
     }
     else if (tasks[i].status === "complete") {
       listItem.querySelector("select[name='status-change']").selectedindex = 2;
